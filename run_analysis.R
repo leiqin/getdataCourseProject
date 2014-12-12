@@ -26,7 +26,7 @@ load_data <- function() {
 	X_test <- read.table(file.path(getwd(), 'UCI HAR Dataset', 'test', 'X_test.txt'), colClasses='numeric')
 	print('loading data from test/y_test.txt')
 	y_test <- read.table(file.path(getwd(), 'UCI HAR Dataset', 'test', 'y_test.txt'), colClasses='factor')
-	print('loading subject from subject/subject_test')
+	print('loading subject from test/subject_test.txt')
 	subject_test <- read.table(file.path(getwd(), 'UCI HAR Dataset', 'test', 'subject_test.txt'), colClasses='factor')
 
 	print('combine the train and test data to one dataset')
